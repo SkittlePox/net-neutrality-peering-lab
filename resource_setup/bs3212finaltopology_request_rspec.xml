@@ -9,7 +9,8 @@
         </interface>
         <services>
             <install url="http://witestlab.poly.edu/repos/genimooc/dash_video/postboot_scripts/server-node-install-scripts.tar.gz" install_path="/root/"/>
-            <execute shell="sh" command="/bin/sh /root/server_postboot.sh"/>
+            <execute shell="sh" command="sudo /bin/sh /root/server_postboot.sh"/>
+	    <execute shell="sh" command="sudo /bin/mkdir; sudo /usr/bin/wget -O /var/www/bunny_Desktop.mpd https://raw.githubusercontent.com/SkittlePox/net-neutrality-peering-lab/master/resource_setup/bunny_Desktop.mpd"/>
         </services>
     </node>
     <node xmlns="http://www.geni.net/resources/rspec/3" client_id="ISPA1">
@@ -82,7 +83,7 @@
         </interface>
         <services>
             <install url="http://witestlab.poly.edu/repos/genimooc/dash_video/postboot_scripts/client-node-install-scripts.tar.gz" install_path="/root/"/>
-            <execute shell="sh" command="/bin/sh /root/client_postboot.sh"/>
+            <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh"/>
         </services>
     </node>
     <node xmlns="http://www.geni.net/resources/rspec/3" client_id="CB">
@@ -98,7 +99,7 @@
         </interface>
         <services>
             <install url="http://witestlab.poly.edu/repos/genimooc/dash_video/postboot_scripts/client-node-install-scripts.tar.gz" install_path="/root/"/>
-            <execute shell="sh" command="/bin/sh /root/client_postboot.sh"/>
+            <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh"/>
         </services>
     </node>
     <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-0">
