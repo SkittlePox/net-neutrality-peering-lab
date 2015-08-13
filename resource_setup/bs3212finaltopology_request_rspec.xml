@@ -83,7 +83,7 @@
         </interface>
         <services>
             <install url="http://witestlab.poly.edu/repos/genimooc/dash_video/postboot_scripts/client-node-install-scripts.tar.gz" install_path="/root/"/>
-            <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh; sudo apt-get install iperf; sudo apt-get install trickle"/>
+	    <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh; sudo apt-get install iperf; sudo apt-get install trickle; sudo apt-get isntall wondershaper"/>
         </services>
     </node>
     <node xmlns="http://www.geni.net/resources/rspec/3" client_id="CB">
@@ -99,7 +99,7 @@
         </interface>
         <services>
             <install url="http://witestlab.poly.edu/repos/genimooc/dash_video/postboot_scripts/client-node-install-scripts.tar.gz" install_path="/root/"/>
-            <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh; sudo apt-get install iperf; sudo apt-get install trickle"/>
+            <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh; sudo apt-get install iperf; sudo apt-get install trickle; sudo apt-get install wondershaper"/>
         </services>
     </node>
     <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-0">
