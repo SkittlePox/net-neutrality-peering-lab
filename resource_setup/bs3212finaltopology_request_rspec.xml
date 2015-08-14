@@ -112,8 +112,8 @@
     <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-1">
         <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-2"/>
         <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-3"/>
-        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-2" dest_id="interface-3" capacity="50000"/>
-        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-3" dest_id="interface-2" capacity="50000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-2" dest_id="interface-3" capacity="100000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-3" dest_id="interface-2" capacity="100000"/>
         <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
     </link>
     <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-2">
@@ -133,29 +133,29 @@
     <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-4">
         <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-8"/>
         <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-9"/>
-        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-8" dest_id="interface-9" capacity="50000"/>
-        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-9" dest_id="interface-8" capacity="50000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-8" dest_id="interface-9" capacity="20000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-9" dest_id="interface-8" capacity="20000"/>
         <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
     </link>
     <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-5">
         <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-10"/>
         <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-11"/>
-        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-10" dest_id="interface-11" capacity="50000"/>
-        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-11" dest_id="interface-10" capacity="50000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-10" dest_id="interface-11" capacity="20000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-11" dest_id="interface-10" capacity="20000"/>
         <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
     </link>
     <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-6">
         <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-12"/>
         <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-13"/>
-        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-12" dest_id="interface-13" capacity="50000"/>
-        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-13" dest_id="interface-12" capacity="50000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-12" dest_id="interface-13" capacity="20000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-13" dest_id="interface-12" capacity="20000"/>
         <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
     </link>
     <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-7">
         <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-14"/>
         <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-15"/>
-        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-14" dest_id="interface-15" capacity="50000"/>
-        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-15" dest_id="interface-14" capacity="50000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-14" dest_id="interface-15" capacity="20000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-15" dest_id="interface-14" capacity="20000"/>
         <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
     </link>
 </rspec>
