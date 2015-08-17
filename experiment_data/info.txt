@@ -1,4 +1,0 @@
-Experiment data in this directory will be in the form of .sq3 files.
-It will have the naming scheme:
-
-NODENAME-EXPERIMENT-CAPACITY-TRIAL#.sq3
