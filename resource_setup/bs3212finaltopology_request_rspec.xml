@@ -109,7 +109,7 @@
     <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
     <sliver_type name="default-vm"/>
     <services>
-      <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh; sudo apt-get install iperf; sudo apt-get install trickle; sudo apt-get install wondershaper; apt-get install oml2-server"/>
+      <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh; sudo apt-get --force-yes install iperf oml2-server"/>
       <install url="http://witestlab.poly.edu/repos/genimooc/dash_video/postboot_scripts/client-node-install-scripts.tar.gz" install_path="/root/"/>
     </services>
     <interface client_id="interface-9" component_id="urn:publicid:IDN+geni.kettering.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.kettering.edu+sliver+14312" mac_address="024b7bece6d5">
@@ -132,7 +132,7 @@
     <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
     <sliver_type name="default-vm"/>
     <services>
-      <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh; sudo apt-get install iperf; sudo apt-get install trickle; sudo apt-get install wondershaper; apt-get install oml2-server"/>
+      <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh; sudo apt-get --force-yes install iperf oml2-server"/>
       <install url="http://witestlab.poly.edu/repos/genimooc/dash_video/postboot_scripts/client-node-install-scripts.tar.gz" install_path="/root/"/>
     </services>
     <interface client_id="interface-13" component_id="urn:publicid:IDN+geni.kettering.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+geni.kettering.edu+sliver+14318" mac_address="02a1999c3193">
