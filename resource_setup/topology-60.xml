@@ -1,0 +1,160 @@
+<rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:tour="http://www.protogeni.net/resources/rspec/ext/apt-tour/1" xmlns:jacks="http://www.protogeni.net/resources/rspec/ext/jacks/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3    http://www.geni.net/resources/rspec/3/request.xsd" type="request">
+    <node xmlns="http://www.geni.net/resources/rspec/3" client_id="CP">
+        <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+        <sliver_type xmlns="http://www.geni.net/resources/rspec/3" name="default-vm"/>
+        <services xmlns="http://www.geni.net/resources/rspec/3"/>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-0">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.10.1.1" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <services>
+            <install url="http://witestlab.poly.edu/repos/genimooc/dash_video/postboot_scripts/server-node-install-scripts.tar.gz" install_path="/root/"/>
+	    <execute shell="sh" command="sudo /bin/sh /root/server_postboot.sh; sudo /bin/mkdir; sudo /usr/bin/wget -O /var/www/bunny_Desktop.mpd https://raw.githubusercontent.com/SkittlePox/net-neutrality-peering-lab/master/resource_setup/bunny_Desktop.mpd; sudo apt-get -y install iperf"/>
+        </services>
+    </node>
+    <node xmlns="http://www.geni.net/resources/rspec/3" client_id="ISPA1">
+        <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+        <sliver_type xmlns="http://www.geni.net/resources/rspec/3" name="default-vm"/>
+        <services xmlns="http://www.geni.net/resources/rspec/3"/>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-1">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.10.1.2" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-2">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.3.1.1" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-4">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.1.1.1" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+    </node>
+    <node xmlns="http://www.geni.net/resources/rspec/3" client_id="ISPB1">
+        <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+        <sliver_type xmlns="http://www.geni.net/resources/rspec/3" name="default-vm"/>
+        <services xmlns="http://www.geni.net/resources/rspec/3"/>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-3">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.3.1.2" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-6">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.2.1.1" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+    </node>
+    <node xmlns="http://www.geni.net/resources/rspec/3" client_id="ISPA2">
+        <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+        <sliver_type xmlns="http://www.geni.net/resources/rspec/3" name="default-vm"/>
+        <services xmlns="http://www.geni.net/resources/rspec/3"/>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-5">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.1.1.2" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-8">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.1.2.1" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-10">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.1.3.1" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+    </node>
+    <node xmlns="http://www.geni.net/resources/rspec/3" client_id="ISPB2">
+        <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+        <sliver_type xmlns="http://www.geni.net/resources/rspec/3" name="default-vm"/>
+        <services xmlns="http://www.geni.net/resources/rspec/3"/>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-7">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.2.1.2" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-12">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.2.3.1" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-14">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.2.2.1" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+    </node>
+    <node xmlns="http://www.geni.net/resources/rspec/3" client_id="CA">
+        <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+        <sliver_type xmlns="http://www.geni.net/resources/rspec/3" name="default-vm"/>
+        <services xmlns="http://www.geni.net/resources/rspec/3"/>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-9">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.1.2.2" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-11">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.1.3.2" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <services>
+        <install url="http://witestlab.poly.edu/repos/genimooc/dash_video/postboot_scripts/client-node-install-scripts.tar.gz" install_path="/root/"/>
+	    <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh; sudo apt-get -y install iperf oml2-server"/>
+        </services>
+    </node>
+    <node xmlns="http://www.geni.net/resources/rspec/3" client_id="CB">
+        <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/VM-noTxt-centered.svg"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+        <sliver_type xmlns="http://www.geni.net/resources/rspec/3" name="default-vm"/>
+        <services xmlns="http://www.geni.net/resources/rspec/3"/>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-13">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.2.3.2" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-15">
+            <ip xmlns="http://www.geni.net/resources/rspec/3" address="10.2.2.2" type="ipv4" netmask="255.255.255.0"/>
+        </interface>
+        <services>
+        <install url="http://witestlab.poly.edu/repos/genimooc/dash_video/postboot_scripts/client-node-install-scripts.tar.gz" install_path="/root/"/>
+        <execute shell="sh" command="sudo bin/sh /root/client_postboot.sh; sudo apt-get -y install iperf oml2-server"/>
+        </services>
+    </node>
+    <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-0">
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-0"/>
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-1"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-0" dest_id="interface-1" capacity="50000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-1" dest_id="interface-0" capacity="50000"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
+    </link>
+    <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-1">
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-2"/>
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-3"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-2" dest_id="interface-3" capacity="60000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-3" dest_id="interface-2" capacity="60000"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
+    </link>
+    <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-2">
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-4"/>
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-5"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-4" dest_id="interface-5" capacity="50000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-5" dest_id="interface-4" capacity="50000"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
+    </link>
+    <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-3">
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-6"/>
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-7"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-6" dest_id="interface-7" capacity="50000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-7" dest_id="interface-6" capacity="50000"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
+    </link>
+    <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-4">
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-8"/>
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-9"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-8" dest_id="interface-9" capacity="20000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-9" dest_id="interface-8" capacity="20000"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
+    </link>
+    <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-5">
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-10"/>
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-11"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-10" dest_id="interface-11" capacity="20000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-11" dest_id="interface-10" capacity="20000"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
+    </link>
+    <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-6">
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-12"/>
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-13"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-12" dest_id="interface-13" capacity="20000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-13" dest_id="interface-12" capacity="20000"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
+    </link>
+    <link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-7">
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-14"/>
+        <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-15"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-14" dest_id="interface-15" capacity="20000"/>
+        <property xmlns="http://www.geni.net/resources/rspec/3" source_id="interface-15" dest_id="interface-14" capacity="20000"/>
+        <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="148"/>
+    </link>
+</rspec>
